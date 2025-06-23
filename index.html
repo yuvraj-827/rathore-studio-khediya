@@ -65,6 +65,23 @@
   </form>
 </div>
 
+<!-- 📩 WhatsApp Booking Form -->
+<div style="max-width:400px;margin:auto;padding:20px;background:#f0f0f0;border-radius:12px;box-shadow:0 0 15px rgba(0,0,0,0.1);font-family:sans-serif;">
+  <h2 style="text-align:center;">📩 Book Us Now</h2>
+  <form onsubmit="sendMessage(); return false;">
+    <label for="name">👤 Your Name:</label>
+    <input type="text" id="name" required placeholder="Enter your name" style="width:100%;padding:10px;margin-bottom:10px;border-radius:5px;border:1px solid #ccc;">
+
+    <label for="mobile">📱 Mobile No:</label>
+    <input type="tel" id="mobile" required placeholder="Enter your number" style="width:100%;padding:10px;margin-bottom:10px;border-radius:5px;border:1px solid #ccc;">
+
+    <label for="message">📝 Message:</label>
+    <textarea id="message" rows="4" required placeholder="Booking details..." style="width:100%;padding:10px;margin-bottom:10px;border-radius:5px;border:1px solid #ccc;"></textarea>
+
+    <button type="submit" style="width:100%;padding:12px;background:#25D366;color:#fff;border:none;border-radius:5px;font-size:16px;cursor:pointer;">📤 Send on WhatsApp</button>
+  </form>
+</div>
+
 <!-- 🟢 JavaScript Code -->
 <script>
   function sendMessage() {
@@ -72,7 +89,7 @@
     const mobile = document.getElementById("mobile").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    const whatsappNumber = "919876543210"; // ← Yahan apna number daalein (without + or space)
+    const whatsappNumber = "918619841556"; // ✅ Aapka number laga diya gaya hai
 
     const fullMessage = `📩 *New Booking Request* \n\n👤 *Name:* ${name}\n📱 *Mobile:* ${mobile}\n📝 *Message:* ${message}`;
     
@@ -80,6 +97,7 @@
     window.open(url, "_blank");
   }
 </script>
+
 
 
   <footer>
